@@ -5,24 +5,84 @@
   <title>HTML Sample</title>
   <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="sample.js"></script>
-  <script type="text/javascript" asyncsrc="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=MML_SVG"></script>
+  <script type="text/javascript" id="MathJax-script" async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="js/style.js"></script>
 <body>
-  <div class="header">ヘッダー</div>
-  <div class="main">
-    <h1>見出し</h1>
-    <p>コンテンツ</p>
-    MathJax の使い方を練習します。<br>
+  <div id="top_visual"></div>
+<nav>
+    <div class="wrapper">
+      <ul id="global_nav">
+        <li class="#"><a href="#">メニュー１</a>
+            <ul>
+                <li><a href="#about">メニュー１ａ</a></li>
+                <li><a href="#">メニュー１ｂ</a></li>
+                <li><a href="#">メニュー１ｃ</a></li>
+            </ul>
+        </li>
+        <li class="#"><a href="#">メニュー２</a>
+            <ul>
+                <li><a href="#blog">メニュー２ａ</a></li>
+                <li><a href="#">メニュー２ｂ</a></li>
+                <li><a href="#">メニュー２ｃ</a></li>
+                <li><a href="#">メニュー２ｄ</a></li>
+            </ul>
+        </li>
+        <li class="#"><a href="#">メニュー３</a>
+            <ul>
+                <li><a href="#contact">メニュー３ａ</a></li>
+                <li><a href="#">メニュー３ｂ</a></li>
+            </ul>
+        </li>
+        <li class="#"><a href="#">メニュー４</a>
+            <ul>
+                <li><a href="#">メニュー４ａ</a></li>
+                <li><a href="#">メニュー４ｂ</a></li>
+            </ul>
+        </li>
+        <li class="#"><a href="#">メニュー５</a>
+            <ul>
+                <li><a href="#">メニュー５ａ</a></li>
+                <li><a href="#">メニュー５ｂ</a></li>
+                <li><a href="#">メニュー５ｃ</a></li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+</nav>
+
+<section id="about">
+    <div class="wrapper">
+        <h1>About</h1>
+        <p>テストです.MathJax の使い方を練習します。
     一次方程式 \(ax+b=0\) の解は
     \[
       x = -\frac{b}{a}
     \]
-です。
 
-    <img src="test.jpg">
-  </div>
-  <div class="footer">
-    <span>フッター</span>
+    \[
+    \frac{\partial \boldsymbol{v}}{\partial t}+\boldsymbol{v} \cdot \nabla \boldsymbol{v}=-\frac{1}{\rho} \nabla p+\nu \nabla^2 \boldsymbol{v}
+    \]</p>
+    </div>
+</section>
+<section id="blog">
+    <div class="wrapper">
+        <h1>Blog</h1>
+        <p>テストです</p>
+    </div>
+</section>
+<section id="contact">
+    <div class="wrapper">
+        <h1>Contact</h1>
+        <p>テストです</p>
+    </div>
+</section>
+
+
+
+
     <a href="https://github.com/takaoka-labo">github</a>
   </div>
 </body>

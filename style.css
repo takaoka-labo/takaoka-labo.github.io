@@ -1,15 +1,14 @@
+
+
 .header {
     position: fixed;
     top: 0;
     width: 100%;
     height: 50px;
-    background-color: darkgrey;
+    background-color: rgb(222, 238, 153);
   }
    
-  .main {
-    padding-top: 50px;
-    overflow: auto;
-  }
+
    
   .footer {
     position: fixed;
@@ -18,3 +17,121 @@
     height: 50px;
     background-color: darkgrey;
   }
+
+*{
+    margin: 0;
+}
+
+#top_visual {
+    background: url(img/test.jpg) center center / cover no-repeat;
+    height: 480px;
+}
+
+nav {
+    background: #0417bd;
+    width: 100%;
+}
+
+nav.fix {
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+nav ul {
+    justify-content: flex-end;
+    display: flex;
+    list-style: none;
+
+}
+
+.item {
+    margin: 0 2em;
+    padding: 17px 0;
+}
+
+.item a {
+    color: #dffa66;
+    text-decoration: none;
+}
+
+.item a:hover{
+    color: #D5BC94;
+}
+
+h1 {
+    font-size: 1.25rem;
+    padding: 2rem 0;
+    color: #B78D4A;
+    font-weight: normal;
+}
+
+p {
+    line-height: 2;
+    padding-bottom: 4rem;
+    color: #555A60;
+}
+
+section{
+    background-color: #F0F0F0;
+    padding: 2em;
+
+}
+
+section .wrapper{
+    max-width: 800px;
+}
+
+footer {
+    background-color: #ffca74;
+    padding: 2em;
+}
+
+footer p {
+    font-size: .8em;
+    color: #fff;
+    max-width: 800px;
+    padding: 0;
+}
+
+/* ナビゲーションのスタイル */
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#global_nav li{
+    float: left;
+    width: calc(98.5%/5);
+    margin: 1% 0.15%;
+}
+#global_nav li a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #006eff;
+}
+
+#global_nav li a:hover{
+    color: #00ffea;
+    background: #7c00e2;
+}
+
+/* 子要素のみのスタイル */
+#global_nav ul{
+    display: none;
+}
+
+#global_nav ul li{
+    float: none;
+    width: 100%;
+    margin: 1% 0;
+}
+
+  
