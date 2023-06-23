@@ -5,17 +5,25 @@
   <title>HTML Sample</title>
   <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="sample.js"></script>
+  <script type="text/javascript" asyncsrc="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=MML_SVG"></script>
 </head>
 <body>
-  <div class="header">Header領域</div>
+  <div class="header">ヘッダー</div>
   <div class="main">
     <h1>見出し</h1>
     <p>コンテンツ</p>
-    <img src="img/test.jpg">
+    MathJax の使い方を練習します。<br>
+    一次方程式 \(ax+b=0\) の解は
+    \[
+      x = -\frac{b}{a}
+    \]
+です。
+
+    <img src="test.jpg">
   </div>
   <div class="footer">
-    <span>Footer領域</span>
-    <a href="#">リンク</a>
+    <span>フッター</span>
+    <a href="https://github.com/takaoka-labo">github</a>
   </div>
 </body>
 </html>
